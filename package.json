@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "openai": "^3.2.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "chatbot:start": "npx ts-node ./chat.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1"
+  }
+}
