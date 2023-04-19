@@ -1,4 +1,4 @@
-# CommandLineAIChat
+# AI chatbot sample
 
 ## やり方
 1. devcontainerを立ち上げる
