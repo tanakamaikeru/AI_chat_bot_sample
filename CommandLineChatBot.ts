@@ -1,11 +1,14 @@
 import * as readline from "readline";
-import { IChatBotClient } from "./ChatGPTClient";
 
 const EXIT_CHAT_WORD = "exit";
 const USER_CHAT_PROMPT = "You: ";
 const BOT_CHAT_PROMPT = "Bot: ";
 
 export type asyncChat = (text: string) => Promise<string>;
+
+export interface IChatBotClient {
+    chat: asyncChat;
+}
 
 export class CommandLineChatBot {
     private rl: readline.Interface;
